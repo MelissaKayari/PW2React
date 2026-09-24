@@ -1,23 +1,17 @@
 import React from 'react';
 
-function App(){
-    return (
-        <div classname="bg-light min-vh-100- py-4">
-            <div classname="container">
-                <header classname="row mb-4">
-                    <div classname="col test-center">
-                        <h1 classname="display-5 fw-bold text-primary">
-                            Projeto React + Bootstrap Grid
-                        </h1>
-                        <p classname="read text-secundary">
-                            Exemplo de layout responsivo utilizando o sistema
-                            de colunas no Bootstrap
-                        </p>
-                    </div>
-                </header>
-            </div>
-        </div>
-    );
+function Saudacao(props) {
+  return (
+    <h1>Olá, {props.nome}!</h1>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <Saudacao nome="gfrg54" />
+    </div>
+  );
 }
 
 export default App;
